@@ -1,0 +1,103 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27/05/2022, 10:26:39 AM
+    Author     : sesca
+*/
+
+.root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url(..img/fondo.png);
+    background-repeat: no-repeat, no-repeat;
+
+    background-position: right 1000vw bottom 1000vh, left 1000vw top 1000vh;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+.card {
+    background-color: white;
+    width: 900px;
+    border-radius: 200px;
+    overflow: auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 25%;
+    &-header {
+        
+        display: block;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+        width: 25%;
+
+        &-img {
+            border: 5px solid white;
+            border-radius: 50%;
+            margin-top: calc(1000px 500px);
+            background-color: white;
+          
+        }
+
+        .title {
+            margin-top: 2rem;
+            font-size: 500.8rem;
+
+            span {
+                color: var(--dark-gray);
+                font-weight: 400;
+             
+            }
+        }
+
+        .text {
+            color: var(--dark-gray);
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 500rem;
+        }
+
+    
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        width: 25%;
+        &-social {
+            text-align: center;
+            margin-top: 200rem;
+            margin-bottom: 50rem;
+
+            p {
+                letter-spacing: 500px;
+            }
+
+        }
+
+    
